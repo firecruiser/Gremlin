@@ -41,26 +41,26 @@ else:unix: LIBS += -L$$PWD/hidapi/windows/ -lhidapi
 INCLUDEPATH += $$PWD/hidapi/windows/Debug
 DEPENDPATH += $$PWD/hidapi/windows/Debug
 
-INCLUDEPATH +=$$PWD/../opencv/build/install/include \ $$PWD/../opencv/build/install/bin
-INCLUDEPATH +=$$PWD/../opencv/build/install/include/opencv
-LIBS += $$PWD/../opencv/build/install/lib/*.lib
+INCLUDEPATH +=$$PWD/../../opencv/build/install/include \ $$PWD/../../opencv/build/install/bin
+INCLUDEPATH +=$$PWD/../../opencv/build/install/include/opencv
+LIBS += $$PWD/../../opencv/build/install/lib/*.lib
 
 
-LIBS += "$$PWD/../../Program Files/Microsoft SDKs/Kinect/v1.6/lib/x86/Kinect10.lib"
+LIBS += "$$PWD/../../../Program Files/Microsoft SDKs/Kinect/v1.6/lib/x86/Kinect10.lib"
 
-INCLUDEPATH += "$$PWD/../../Program Files/Microsoft SDKs/Kinect/v1.6/lib/x86"
-DEPENDPATH += "$$PWD/../../Program Files/Microsoft SDKs/Kinect/v1.6/lib/x86"
+INCLUDEPATH += "$$PWD/../../../Program Files/Microsoft SDKs/Kinect/v1.6/lib/x86"
+DEPENDPATH += "$$PWD/../../../Program Files/Microsoft SDKs/Kinect/v1.6/lib/x86"
 
-INCLUDEPATH += "$$PWD/../../Program Files/Microsoft SDKs/Kinect/v1.6/inc"
-
-
+INCLUDEPATH += "$$PWD/../../../Program Files/Microsoft SDKs/Kinect/v1.6/inc"
 
 
-win32:CONFIG(release, debug|release): LIBS += $$PWD/../cvblobslib/cvblobslib_OpenCV_v8_3/release/cvblobslib.lib
-else:win32:CONFIG(debug, debug|release): LIBS += $$PWD/../cvblobslib/cvblobslib_OpenCV_v8_3/debug/cvblobslib.lib
-else:unix: LIBS += -L$$PWD/../cvblobslib/cvblobslib_OpenCV_v8_3/ -lcvblobslib
 
-INCLUDEPATH += $$PWD/../cvblobslib/cvblobslib_OpenCV_v8_3/release
-DEPENDPATH += $$PWD/../cvblobslib/cvblobslib_OpenCV_v8_3/release
 
-INCLUDEPATH += $$PWD/../cvblobslib/cvblobslib_OpenCV_v8_3
+win32:CONFIG(release, debug|release): LIBS += $$PWD/../../cvblobslib/cvblobslib_OpenCV_v8_3/release/cvblobslib.lib
+else:win32:CONFIG(debug, debug|release): LIBS += $$PWD/../../cvblobslib/cvblobslib_OpenCV_v8_3/debug/cvblobslib.lib
+else:unix: LIBS += -L$$PWD/../../cvblobslib/cvblobslib_OpenCV_v8_3/ -lcvblobslib
+
+INCLUDEPATH += $$PWD/../../cvblobslib/cvblobslib_OpenCV_v8_3/release
+DEPENDPATH += $$PWD/../../cvblobslib/cvblobslib_OpenCV_v8_3/release
+
+INCLUDEPATH += $$PWD/../../cvblobslib/cvblobslib_OpenCV_v8_3
